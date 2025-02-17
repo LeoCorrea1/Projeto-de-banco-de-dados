@@ -42,7 +42,7 @@ O SGBD cuida de todo o trabalho técnico de organizar e gerenciar os dados no BD
 Definição: O banco de dados é um local onde você armazena informações de forma organizada e estruturada. Pode ser algo como uma coleção de tabelas onde ficam guardados dados de clientes, produtos, vendas, etc.
 
 2. Sistema Gerenciador de Banco de Dados (SGBD)
-Definição: O SGBD é o software que gerencia o banco de dados. Ele facilita o acesso, a organização, a consulta e a alteração dos dados. Exemplos: MySQL, PostgreSQL, SQL Server.
+Definição: O SGBD é o software que gerencia o banco de dados. Ele facilita o acesso, a organização, a consulta e a alteração dos dados. Exemplos: MySQL, PostgreSQL, SQL Server. O mais importante do é A integridade dos dados e a Segurança dos dados.
 
 3. Modelo Relacional de Banco de Dados
 Definição: No modelo relacional, os dados são armazenados em tabelas que podem se relacionar entre si. As tabelas têm linhas (registros) e colunas (atributos). As relações entre as tabelas são feitas por chaves primárias e chaves estrangeiras.
