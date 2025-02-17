@@ -1,0 +1,64 @@
+- Banco de Dados (BD)
+  É um local onde todas informaçoes ( seja de uma loja, como clientes,roupas, e etc ) sao armazenadas de forma organizada, o BD ajuda a manter todas informaçoes no mesmo local, para poder ser alteradas ou acessadas de forma mais rapida, quando precisar.
+
+- Sistema Gerenciador de Banco de Dados (SGBD)  
+  Só armazenar os dados nao é o suficiente, precisa de um Gerenciador de dados, ai que entra o SGBD, Que é um software que gerencia esses dados, onde ele faz o trabalho de:
+Organizar as informações dentro do banco de dados.
+Garantir que os dados sejam acessados de maneira eficiente.
+Permitir que você atualize, consulte e apague dados sem se preocupar com o funcionamento interno.
+Controlar o acesso ao banco de dados, para que só pessoas autorizadas possam visualizar ou modificar as informações.
+  Exemplos de SGBDs incluem o MySQL, PostgreSQL e SQL Server.
+
+- Modelo Relacional de Banco de Dados  
+  é uma forma de organizar e estruturar os dados de um BD, esse modelo usa TABELAS, cada tabla pode ter linhas (registros) e colunas ( atributos), tipo uma planilha.
+Por exemplo, pode ter uma tabela para clientes (com colunas como ID, Nome, Email), uma para produtos (com ID, Nome do Produto, Preço), e uma para pedidos (com ID do Pedido, ID do Cliente, ID do Produto).
+essas tabelas se relacionam entre si , se um cliente faz muitos pedidos , essa ligaçao é por meio de chaves.
+Chave Primária (Primary Key): É uma identificação única para cada linha de uma tabela. Imagina que cada cliente tem um número de ID único. Esse ID é a chave primária, pois não se repete e identifica de forma exclusiva cada cliente na tabela.  
+Chave Estrangeira (Foreign Key): É uma referência a uma chave primária de outra tabela. Por exemplo, se na tabela de Pedidos você quiser saber qual cliente fez aquele pedido, 
+você coloca o ID do cliente Esse ID_cliente na tabela de Pedidos é uma chave estrangeira, porque está apontando para a chave primária da tabela de Clientes.
+  modelo relacional ajuda a manter os dados bem organizados e facilita as consultas entre as tabelas. 
+
+- Microserviços  
+é uma forma de DIVIDIR uma aplicaçao ( por exemplo uma loja) em partes menores e independentes, em vez de ter um sistema gigantesco, com microserviços se cria pequenos serviços responsáveis por tarefas específicas, como:
+Microserviço de Cadastro de Produtos: cuida apenas dos produtos.
+Microserviço de Cadastro de Usuários: cuida dos usuários da loja.
+Microserviço de Processamento de Pagamentos: cuida das transações financeiras.
+Microserviço de Estoque: cuida do controle do estoque dos produtos.
+  Esses serviços se comunicam entre si, por exemplo o Microserviço de Pagamento pode precisar verificar com o Microserviço de Estoque se o produto está disponível antes de processar um pagamento.
+
+- Relaçao de BD com MicroServiços
+  Cada microseviço pode ter seu proprio BD ou uma parte, significa que o microserviço de pagamento pode ter um BD dedicado para armazenar informações relacionadas a pagamentos, enquanto o microserviço de produtos pode ter outro banco de dados para controlar os produtos da loja.
+com micro serviços o sistema é mais flexível e escalável
+
+- Relação entre BD e SGBD
+O Banco de Dados (BD) e o Sistema Gerenciador de Banco de Dados (SGBD) têm uma relação de dependência. O BD é o repositório de dados e o SGBD é o software que gerencia esse repositório.
+
+O SGBD permite que você interaja com o BD de maneira simples, fazendo consultas e alterações nas informações, sem que você precise saber exatamente como os dados estão armazenados fisicamente.
+O SGBD cuida de todo o trabalho técnico de organizar e gerenciar os dados no BD, enquanto você, como usuário ou desenvolvedor, só precisa pedir informações ou fazer alterações de forma mais intuitiva (por exemplo, usando SQL para consultar ou modificar os dados).
+
+- RESUMO FINAL E TOTAL
+
+1.Banco de Dados (BD)
+Definição: O banco de dados é um local onde você armazena informações de forma organizada e estruturada. Pode ser algo como uma coleção de tabelas onde ficam guardados dados de clientes, produtos, vendas, etc.
+
+2. Sistema Gerenciador de Banco de Dados (SGBD)
+Definição: O SGBD é o software que gerencia o banco de dados. Ele facilita o acesso, a organização, a consulta e a alteração dos dados. Exemplos: MySQL, PostgreSQL, SQL Server.
+
+3. Modelo Relacional de Banco de Dados
+Definição: No modelo relacional, os dados são armazenados em tabelas que podem se relacionar entre si. As tabelas têm linhas (registros) e colunas (atributos). As relações entre as tabelas são feitas por chaves primárias e chaves estrangeiras.
+
+4. Chave Primária (Primary Key)
+Definição: É uma coluna de uma tabela que identifica de forma única cada registro. Exemplo: em uma tabela de clientes, a coluna ID_cliente seria a chave primária, pois cada cliente tem um ID único.
+
+5. Chave Estrangeira (Foreign Key)
+Definição: É uma coluna em uma tabela que faz referência à chave primária de outra tabela. Exemplo: na tabela Pedidos, a coluna ID_cliente pode ser uma chave estrangeira que se relaciona com a tabela Clientes para identificar quem fez o pedido.
+
+6. Microserviços
+Definição: Microserviços são partes pequenas e independentes de uma aplicação maior, cada uma responsável por uma função específica, como o cadastro de usuários ou processamento de pagamentos. Cada microserviço pode ser desenvolvido, testado e escalado separadamente, o que oferece flexibilidade e escalabilidade.
+
+7. Relação entre Microserviços e Banco de Dados
+Cada microserviço pode ter seu próprio banco de dados ou compartilhar um banco de dados com outros. A comunicação entre os microserviços é feita por APIs ou mensagens.
+
+
+
+
