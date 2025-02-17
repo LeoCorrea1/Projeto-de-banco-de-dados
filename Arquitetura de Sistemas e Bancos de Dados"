@@ -54,7 +54,8 @@ Definição: É uma coluna de uma tabela que identifica de forma única cada reg
 Definição: É uma coluna em uma tabela que faz referência à chave primária de outra tabela. Exemplo: na tabela Pedidos, a coluna ID_cliente pode ser uma chave estrangeira que se relaciona com a tabela Clientes para identificar quem fez o pedido.
 
 6. Microserviços
-Definição: Microserviços são partes pequenas e independentes de uma aplicação maior, cada uma responsável por uma função específica, como o cadastro de usuários ou processamento de pagamentos. Cada microserviço pode ser desenvolvido, testado e escalado separadamente, o que oferece flexibilidade e escalabilidade.
+Definição: Microserviços são partes pequenas e independentes de uma aplicação maior, cada uma responsável por uma função específica, como o cadastro de usuários ou processamento de pagamentos.  
+Cada microserviço pode ser desenvolvido, testado e escalado separadamente, o que oferece flexibilidade e escalabilidade.
 
 7. Relação entre Microserviços e Banco de Dados
 Cada microserviço pode ter seu próprio banco de dados ou compartilhar um banco de dados com outros. A comunicação entre os microserviços é feita por APIs ou mensagens.
