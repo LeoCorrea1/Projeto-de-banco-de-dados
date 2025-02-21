@@ -1,1 +1,1 @@
-Tudo oque irei aprender, desenvolver e apresentar durante meu curso de Ciencia da computaçao - UFN , santa maria.
+Everything I will learn, develop, and present during my Computer Science course - UFN, Santa Maria, Brasil .
