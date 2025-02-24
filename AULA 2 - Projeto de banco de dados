@@ -1,6 +1,3 @@
-
-
-
 Modelar um sistema :
 
 Modelar um sistema é como criar um esboço ou um plano de como ele vai funcionar. É como desenhar o mapa de um prédio antes de começar a construção. Quando modelamos um sistema, decidimos:
@@ -30,6 +27,20 @@ Projetar é detalhar como isso vai ser implementado na prática, com mais inform
 
 CARDINALIDADE :
 É o numero de relaçoes entre tabelas
+
+Fator Bloco :
+
+O fator de bloco diz respeito a como os dados são organizados e armazenados no computador (no disco, por exemplo). Ele se refere à quantidade de dados que cabem em um "bloco" de armazenamento.
+
+Modelo Conceitual: Fala sobre o que os dados significam, sem entrar em detalhes de como vão ser armazenados.
+Modelo Lógico: Define a estrutura dos dados, mas ainda sem se preocupar com o armazenamento físico.
+Modelo Físico: É onde o fator de bloco entra, pois define como os dados serão armazenados de fato no disco.
+
+Ou seja, o fator de bloco faz parte do modelo físico, porque está relacionado ao jeito como os dados são guardados no computador.
+
+
+
+
 
 
 
