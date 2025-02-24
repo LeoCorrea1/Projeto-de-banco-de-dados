@@ -1,0 +1,26 @@
+Modelar um sistema :
+
+Modelar um sistema é como criar um esboço ou um plano de como ele vai funcionar. É como desenhar o mapa de um prédio antes de começar a construção. Quando modelamos um sistema, decidimos:
+Quais serão suas funções principais (o que o sistema vai fazer),
+Como as partes do sistema vão interagir entre si (como o sistema vai se comunicar),
+E quais são os requisitos necessários para que o sistema funcione.
+Por exemplo, se você está criando um sistema de vendas online, a modelagem vai decidir coisas como: Quem pode acessar o sistema?, Como os produtos serão comprados?, Como os pagamentos vão funcionar?.
+
+Modelar um Banco de Dados:
+
+Modelar um banco de dados é como organizar as informações que o sistema vai armazenar. Em vez de apenas colocar tudo em um arquivo bagunçado, modelar o banco de dados envolve criar uma estrutura organizada. Você decide:
+Quais dados serão armazenados (como nomes, preços de produtos, informações de clientes),
+Como esses dados vão se relacionar entre si (por exemplo, um cliente pode ter várias compras, ou cada compra está ligada a um produto específico),
+E qual é o formato correto para armazenar esses dados (por exemplo, números, textos, datas).
+A modelagem de banco de dados pode ser representada com diagramas, como um diagrama entidade-relacionamento (ER), onde você mostra as entidades (como "clientes", "produtos", "pedidos") e como elas se conectam.
+
+Projetar um Sistema e Banco de Dados:
+
+Depois de modelar, projetar é a fase onde você começa a detalhar mais a fundo como as coisas vão funcionar. No caso de um sistema, o projeto define como as telas serão (em um app ou site),
+como o usuário vai interagir com o sistema, e como as funcionalidades serão implementadas de forma prática.
+No banco de dados, o projeto envolve detalhar como as tabelas serão montadas, quais colunas terão, qual tipo de dado cada coluna vai armazenar (como número, texto, data), e as regras de integridade para garantir que os dados estejam corretos e seguros.
+
+Em resumo:
+
+Modelar é planejar o que o sistema ou banco de dados vai fazer e como será sua estrutura.
+Projetar é detalhar como isso vai ser implementado na prática, com mais informações e escolhas específicas.
