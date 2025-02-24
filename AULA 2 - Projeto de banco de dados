@@ -1,3 +1,6 @@
+
+
+
 Modelar um sistema :
 
 Modelar um sistema é como criar um esboço ou um plano de como ele vai funcionar. É como desenhar o mapa de um prédio antes de começar a construção. Quando modelamos um sistema, decidimos:
@@ -24,3 +27,23 @@ Em resumo:
 
 Modelar é planejar o que o sistema ou banco de dados vai fazer e como será sua estrutura.
 Projetar é detalhar como isso vai ser implementado na prática, com mais informações e escolhas específicas.
+
+CARDINALIDADE :
+É o numero de relaçoes entre tabelas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
