@@ -23,6 +23,8 @@ PROJETO DE BANCO DE DADDOS
        - 1 : n -> a chave estrangeira vai para o lado da entidade que tem o n
        - n : n -> Cria-se uma terceira tabela,onde as chaves primarias das duas tabelas vao se unir/juntar na terceira tabela criada
 
+- MVP - Minimum Value Product
+
 
 
 n : n
