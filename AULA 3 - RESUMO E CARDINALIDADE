@@ -27,19 +27,6 @@ PROJETO DE BANCO DE DADDOS
 
 
 
-n : n
-Pessoa ( 0 : n :: 1 : n ) Carro
-
-Pessoa(CodPessoa , nome , .... , Cnh )
-
-Veiculo(CodVeiculi , tipo , placa ) 
-
-Locacao ( CodLocacao, v , CodVeiculo , CodPessoa , DataRetirada , DataDevolucao)
-CodVeiculo referencia veiculo
-CodPessoa referencia Pessoa
-
--------------------------------------------------------------------------------
-
 1 : n
 Designer ( n :: 1 ) Mesa
 
@@ -47,3 +34,18 @@ designer ( CodDesigner , nome , CodMesa )
 CodMesa referencia designer
 
 Mesa ( CodMesa, dimensoes, finalidade )
+
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+n : n
+Pessoa ( 0 : n :: 1 : n ) Carro
+
+Pessoa(CodPessoa , nome , .... , Cnh )
+
+Veiculo(CodVeiculo , tipo , placa ) 
+
+Locacao ( CodLocacao, v , CodVeiculo , CodPessoa , DataRetirada , DataDevolucao)
+CodVeiculo referencia veiculo
+CodPessoa referencia Pessoa
+
+
