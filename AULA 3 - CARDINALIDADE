@@ -14,5 +14,10 @@ PROJETO DE BANCO DE DADDOS
     - fundamental para definir FX
     - tipos
        - 1 : 1 
-       - 1 : n
-       - n : n
+       - 1 : n  -> 1 - *
+       - n : n  -> * - *
+  - Modelagem logica
+    - transformaçao de entidades em tabelas
+    - definiçao de chaves estrangeiras a partir da cardinalidade 
+       - 1 : 1 -> a chave estrangeira pode estar em qualquer uma das entidades
+       - 1 : n -> a chave estrangeira 
