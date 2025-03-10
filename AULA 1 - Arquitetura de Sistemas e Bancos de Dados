@@ -10,7 +10,7 @@ Controlar o acesso ao banco de dados, para que só pessoas autorizadas possam vi
   Exemplos de SGBDs incluem o MySQL, PostgreSQL e SQL Server.
 
 - Modelo Relacional de Banco de Dados  
-  é uma forma de organizar e estruturar os dados de um BD, esse modelo usa TABELAS, cada tabla pode ter linhas (registros) e colunas ( atributos), tipo uma planilha.
+é uma forma de organizar e estruturar os dados de um BD, esse modelo usa TABELAS, cada tabla pode ter linhas (registros) e colunas ( atributos), tipo uma planilha.
 Por exemplo, pode ter uma tabela para clientes (com colunas como ID, Nome, Email), uma para produtos (com ID, Nome do Produto, Preço), e uma para pedidos (com ID do Pedido, ID do Cliente, ID do Produto).
 essas tabelas se relacionam entre si , se um cliente faz muitos pedidos , essa ligaçao é por meio de chaves.
 Chave Primária (Primary Key): É uma identificação única para cada linha de uma tabela. Imagina que cada cliente tem um número de ID único. Esse ID é a chave primária, pois não se repete e identifica de forma exclusiva cada cliente na tabela.  
