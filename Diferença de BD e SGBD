@@ -1,0 +1,9 @@
+1- qual a diferença de banco de dados e sistemas gerenciadores de banco de dados (SGBD)
+  
+Banco de dados é onde os dados ficam armazenados, como um grande arquivo organizado. 
+Já o SGBD (Sistema Gerenciador de Banco de Dados) é o programa que controla esse banco, permitindo salvar, buscar e modificar os dados com segurança e eficiência.
+
+2- o que são SGBD relacionais e SGBD não relacionais
+  
+SGBD Relacional organiza os dados em tabelas, como planilhas do Excel, com linhas e colunas que se conectam por meio de chaves. Exemplo: MySQL, PostgreSQL.
+SGBD Não Relacional (ou NoSQL) guarda os dados de outras formas, como documentos, grafos ou pares chave-valor, sendo mais flexível para certos tipos de aplicações. Exemplo: MongoDB, Redis.
