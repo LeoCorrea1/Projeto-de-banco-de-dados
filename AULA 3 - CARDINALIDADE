@@ -20,4 +20,29 @@ PROJETO DE BANCO DE DADDOS
     - transformaçao de entidades em tabelas
     - definiçao de chaves estrangeiras a partir da cardinalidade 
        - 1 : 1 -> a chave estrangeira pode estar em qualquer uma das entidades
-       - 1 : n -> a chave estrangeira 
+       - 1 : n -> a chave estrangeira vai para o lado da entidade que tem o n
+       - n : n -> Cria-se uma terceira tabela,onde as chaves primarias das duas tabelas vao se unir/juntar na terceira tabela criada
+
+
+
+
+n : n
+Pessoa ( 0 : n :: 1 : n ) Carro
+
+Pessoa(CodPessoa , nome , .... , Cnh )
+
+Veiculo(CodVeiculi , tipo , placa ) 
+
+Locacao ( CodLocacao, v , CodVeiculo , CodPessoa , DataRetirada , DataDevolucao)
+CodVeiculo referencia veiculo
+CodPessoa referencia Pessoa
+
+-------------------------------------------------------------------------------
+
+1 : n
+Designer ( n :: 1 ) Mesa
+
+designer ( CodDesigner , nome , CodMesa ) 
+CodMesa referencia designer
+
+Mesa ( CodMesa, dimensoes, finalidade )
