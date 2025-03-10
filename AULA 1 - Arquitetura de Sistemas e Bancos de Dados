@@ -2,7 +2,7 @@
   É um local onde todas informaçoes ( seja de uma loja, como clientes,roupas, e etc ) sao armazenadas de forma organizada, o BD ajuda a manter todas informaçoes no mesmo local, para poder ser alteradas ou acessadas de forma mais rapida, quando precisar.
 
 - Sistema Gerenciador de Banco de Dados (SGBD)  
-  Só armazenar os dados nao é o suficiente, precisa de um Gerenciador de dados, ai que entra o SGBD, Que é um software que gerencia esses dados, onde ele faz o trabalho de:
+Só armazenar os dados nao é o suficiente, precisa de um Gerenciador de dados, ai que entra o SGBD, Que é um software que gerencia esses dados, onde ele faz o trabalho de:
 Organizar as informações dentro do banco de dados.
 Garantir que os dados sejam acessados de maneira eficiente.
 Permitir que você atualize, consulte e apague dados sem se preocupar com o funcionamento interno.
