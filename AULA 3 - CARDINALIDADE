@@ -1,0 +1,18 @@
+PROJETO DE BANCO DE DADDOS 
+
+  - Modelagem - elencar/identificar/destacar requisitos ( estruturais e funcionais)
+    - Modelagem conceitual ( diagrama ER )
+      - entidades -> tabelas
+      - atributos -> variaveis/colunas
+        - identificadores -> chave primaria
+        - oridinarios -> nao sao identificadores
+  - relacionamentos
+    -associaçao
+    -herança
+    -Dependencia
+  - cardinalidade -> relaçao de um elemento  com outro
+    - fundamental para definir FX
+    - tipos
+       - 1 : 1 
+       - 1 : n
+       - n : n
