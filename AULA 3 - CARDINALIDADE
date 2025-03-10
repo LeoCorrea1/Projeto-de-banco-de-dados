@@ -25,7 +25,6 @@ PROJETO DE BANCO DE DADDOS
 
 
 
-
 n : n
 Pessoa ( 0 : n :: 1 : n ) Carro
 
