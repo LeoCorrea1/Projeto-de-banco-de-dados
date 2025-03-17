@@ -14,8 +14,9 @@ Fabricante_Fornecedor(*Fabribricante,*Fornecedor)
 TipoProduto(*IdTipoProduto,Nome)
     tipo referencia TipoProduto
 
-Produto(*IdProduto, nome , dataF, dataV, Tipo, Preço,PrecisaReceita)
+Produto(*IdProduto, nome , dataF, dataV, Tipo, Preço,PrecisaReceita,fabricante)
     tipo refetencia TipoProduto
+    fabricante referencia Fabricante
     
 Receita(*IdReceita,data,Medico)
 
