@@ -17,7 +17,11 @@ TipoProduto(*IdTipoProduto,Nome)
 Produto(*IdProduto, nome , dataF, dataV, Tipo, Preço,PrecisaReceita,fabricante)
     tipo refetencia TipoProduto
     fabricante referencia Fabricante
-    
+
+Produto_Lote( *lote , *produto)
+lote referencia lote
+produto referencia produto
+
 Receita(*IdReceita,data,Medico)
 
 Venda(NotaFiscal, data)
