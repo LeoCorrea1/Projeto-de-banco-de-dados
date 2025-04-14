@@ -1,0 +1,39 @@
+Nível Conceitual vs. Lógico:
+
+O Conceitual é o rascunhão (com o desenho MER), pra gente entender o que precisa guardar de informação, sem pensar em tecnologia. É a ideia do negócio.
+O Lógico já pega essa ideia e organiza em tabelas (no modelo relacional), definindo colunas, chave primária (PK) e estrangeira (FK). Já é a planta baixa do banco.
+SGBD:
+
+É o programa que toma conta do banco (tipo MySQL, PostgreSQL, etc.).
+Além de guardar os dados, ele evita bagunça quando muita gente usa ao mesmo tempo (concorrência) e controla quem pode fazer o quê (segurança).
+Definições MER:
+
+Entidade: Qualquer "coisa" importante que você quer informações sobre (Cliente, Pedido, Produto). Vira tabela depois.
+Atributo Identificador: É o "CPF" da entidade, aquilo que a torna única (Código, Matrícula). Fica sublinhado no desenho e vira a PK da tabela.
+Cardinalidade "Ministra":
+
+Se 1 professor dá várias disciplinas (0,n) e 1 disciplina só tem 1 professor (1,1), fica assim: PROFESSOR (0,n) --- Ministra --- (1,1) DISCIPLINA. Basicamente, um relacionamento "um pra muitos".
+Atributo Composto vs. Multivalorado:
+
+Composto: Dá pra quebrar em pedaços menores (Ex: Endereço vira Rua, Número, Bairro...).
+Multivalorado: Pode ter vários valores pra mesma coisa (Ex: um Cliente ter vários Telefones). No desenho MER, esse tem a bolinha dupla.
+Entidade Fraca:
+
+É uma entidade que depende de outra pra existir e ser identificada (Ex: Dependente de um Funcionário). Ela "pega emprestado" a chave da entidade forte pra formar a sua própria chave.
+Restrições de Herança:
+
+Disjunta (d) é "OU um OU outro" (Ex: Pessoa física OU jurídica). Sobreposta (o) é "pode ser os dois" (Ex: Aluno E Funcionário).
+Total (t) é "TEM que ser de um tipo" (Ex: Conta TEM que ser Corrente OU Poupança). Parcial (p) é "PODE ser de um tipo, ou nenhum" (Ex: Funcionário PODE ser Gerente, ou só funcionário normal).
+PK e FK:
+
+PK (Primária): É o ID único de cada linha na tabela. Não pode faltar!
+FK (Estrangeira): É a "ponte" que liga uma tabela na outra. Ela aponta pra PK da tabela relacionada e garante que a ligação faça sentido (não dá pra ter um pedido de um cliente que não existe).
+Mapeamento MER -> Relacional:
+
+N:M (Muitos-para-Muitos): Sempre vira uma tabela nova no meio, juntando as chaves das outras duas.
+Atributo Multivalorado: Sempre vira uma tabela nova separada, só pra guardar aqueles vários valores (tipo os telefones do cliente).
+Entidade Forte: Vira uma tabela normal. O identificador vira PK, o resto vira coluna.
+Mapeamento de Herarquia (VEICULO -> CARRO, MOTO):
+
+Opção 1 (Tabelão Único): Uma tabela VEICULO com colunas pra tudo (placa, ano, porta, cilindrada, tipo...). Ruim porque fica cheio de campo vazio pra moto (porta?) ou pra carro (cilindrada?).
+Opção 2 (Tabela pra cada): Uma tabela VEICULO (só com o comum: placa, ano), uma CARRO (placa, portas), uma MOTO (placa, cilindradas). A placa liga tudo (é PK e FK). Geralmente é melhor, mais organizado.
