@@ -1,0 +1,113 @@
+🧠 O que é GROUP BY?
+GROUP BY é usado para agrupar linhas com valores iguais em colunas específicas. Após agrupar, você geralmente aplica funções de agregação como:
+
+COUNT() — conta registros.
+
+AVG() — calcula a média.
+
+SUM() — soma.
+
+MIN() / MAX() — mínimo/máximo.
+
+📚 Explicação com seus exemplos
+✅ Exemplo 1:
+sql
+Copiar
+Editar
+-- Quantidade de livros por editora
+SELECT idEditora, COUNT(*) AS total_livros
+FROM Livro
+GROUP BY idEditora;
+Explicação:
+
+Agrupa os livros pela idEditora.
+
+Conta quantos livros existem para cada editora.
+
+🧾 Resultado:
+
+idEditora	total_livros
+1	3
+2	5
+
+✅ Exemplo 2:
+sql
+Copiar
+Editar
+-- Preço médio dos livros por editora
+SELECT idEditora, AVG(preco) AS preco_medio
+FROM Livro
+GROUP BY idEditora;
+Explicação:
+
+Agrupa por editora (idEditora).
+
+Calcula a média de preço dos livros de cada editora.
+
+🧾 Resultado:
+
+idEditora	preco_medio
+1	45.90
+2	30.00
+
+✅ Exemplo 3:
+sql
+Copiar
+Editar
+-- Soma de livros por gênero, com filtro no HAVING
+SELECT idGenero, COUNT(*) AS qtd_livros
+FROM Livro
+GROUP BY idGenero
+HAVING COUNT(*) > 1;
+Explicação:
+
+Agrupa por gênero (idGenero).
+
+Conta quantos livros existem em cada gênero.
+
+O HAVING filtra grupos com mais de 1 livro.
+
+🧾 Exemplo:
+
+idGenero	qtd_livros
+2	3
+3	4
+
+🔸 HAVING é como o WHERE, mas usado depois do GROUP BY, pois filtra grupos, não linhas individuais.
+
+✅ Exemplo 4:
+sql
+Copiar
+Editar
+-- Autores que escreveram mais de 1 livro
+SELECT idAutor, COUNT(*) AS total_livros
+FROM Livro_Autor
+GROUP BY idAutor
+HAVING total_livros > 1;
+Explicação:
+
+Agrupa pela coluna idAutor.
+
+Conta quantos livros cada autor escreveu (considerando a tabela intermediária Livro_Autor).
+
+Só mostra autores com mais de 1 livro.
+
+✅ Exemplo 5:
+sql
+Copiar
+Editar
+-- Número de livros por autor (com nome)
+SELECT Autor.nome, COUNT(Livro_Autor.idLivro) AS total_livros
+FROM Autor
+LEFT JOIN Livro_Autor ON Autor.idAutor = Livro_Autor.idAutor
+GROUP BY Autor.idAutor, Autor.nome
+ORDER BY total_livros DESC;
+Explicação:
+
+Junta autores com livros.
+
+Agrupa por nome do autor (e idAutor para garantir unicidade).
+
+Conta quantos livros cada autor escreveu.
+
+Ordena do que mais escreveu para o que menos escreveu.
